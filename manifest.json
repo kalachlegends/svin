@@ -1,0 +1,15 @@
+{
+  "name": "SvinoMAtka",
+  "description": "translater SvinoMAtka",
+  "version": "1.1",
+  "manifest_version": 3,
+  "permissions": [
+    "bookmarks"
+  ],
+  "action": {
+    "default_title": "SvinoMAtka",
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "key": "123213"
+}
