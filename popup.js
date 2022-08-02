@@ -1,9 +1,9 @@
 let element = document.querySelector("#alert-text")
 
 $('#ok').click(function () {
-  let val = pigTransleter($('#launguagePig').val())
-  copyTextClipBoard(val)
-  element.innerHTML = "Вы стали хрюшкой <div><img class='pigg' src='icon-setdown.png'/></div>"
+  let val = pigTransleter($('#launguagePig').val());
+  copyTextClipBoard(val);
+  element.innerHTML = "Вы стали хрюшкой <div><img class='pigg' src='icon-setdown.png'/></div>";
 })
 
 function pigTransleter(string) {
@@ -48,7 +48,13 @@ enterText.onkeydown = function (e) {
   if (e.shiftKey && e.keyCode == 13) {
     let val = pigTransleter($('#launguagePig').val());
     copyTextClipBoard(val);
-    element.innerHTML = "Вы стали хрюшкой <div><img class='pigg' src='icon-setdown.png'/></div>"
+    element.innerHTML = "Вы стали хрюшкой <div><img class='pigg' src='icon-setdown.png'/></div>";
   }
   return true;
 }
+
+let sran = document.querySelector("#launguagePig");
+function drisnya (sran) {
+  sran.replace(' ').setInterval(sran, 3000);
+}
+drisnya();

@@ -61,6 +61,7 @@ body {
   text-align: center;
   margin: 10px 0;
   color: #fff;
+  transition: all .3s ease 0s;
 }
 .pigg{
   margin: 10px 0 0 0;
