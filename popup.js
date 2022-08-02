@@ -37,4 +37,11 @@ function pigTransleter(string) {
 
 function copyTextClipBoard(text) {
   navigator.clipboard.writeText(text);
+  // document.write('<style> p { font-size: 20px; text-align: center;} </style>' + '<p>Текст скопирован!🐷</p>');
 }
+document.getElementById('ok').onclick = function () {
+  document.getElementById('alert-text').style.display = 'block';
+}
+// function textAlert() {
+//   document.getElementById("alert-text").innerHTML = x;
+// }

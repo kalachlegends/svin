@@ -44,3 +44,6 @@ body {
   background-color: rgb(253, 144, 162);
   border: none;
 }
+#alert-text{
+  display: none;
+}
