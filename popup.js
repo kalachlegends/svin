@@ -53,8 +53,8 @@ enterText.onkeydown = function (e) {
   return true;
 }
 
-let sran = document.querySelector("#launguagePig");
-function drisnya (sran) {
-  sran.replace(' ').setInterval(sran, 3000);
-}
-drisnya();
+// let sran = document.querySelector("#launguagePig");
+// function drisnya (sran) {
+//   sran.replace(' ').setInterval(sran, 3000);
+// }
+// drisnya();
