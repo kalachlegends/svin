@@ -1,6 +1,9 @@
+let element = document.querySelector("#alert-text")
+
 $('#ok').click(function () {
   let val = pigTransleter($('#launguagePig').val())
   copyTextClipBoard(val)
+  element.innerHTML = "Текст скопирован<span>🐷</span>"
 })
 
 function pigTransleter(string) {
@@ -37,11 +40,15 @@ function pigTransleter(string) {
 
 function copyTextClipBoard(text) {
   navigator.clipboard.writeText(text);
-  // document.write('<style> p { font-size: 20px; text-align: center;} </style>' + '<p>Текст скопирован!🐷</p>');
 }
-document.getElementById('ok').onclick = function () {
-  document.getElementById('alert-text').style.display = 'block';
+
+var enterText = document.getElementById('launguagePig');
+enterText.onkeydown = function (e) {
+  e = e || window.event;
+  if (e.shiftKey && e.keyCode == 13) {
+    let val = pigTransleter($('#launguagePig').val());
+    copyTextClipBoard(val);
+    element.innerHTML = "Текст скопирован<span>🐷</span>"
+  }
+  return true;
 }
-// function textAlert() {
-//   document.getElementById("alert-text").innerHTML = x;
-// }
