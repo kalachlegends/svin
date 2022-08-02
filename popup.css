@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap');
 
 body {
   width: 300px;
@@ -15,7 +15,7 @@ body {
 }
 
 .textarea {
-  font-family: 'Ubuntu Mono', monospace;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
   min-height: 80px;
   resize: vertical;
   border: 1px solid pink;
@@ -26,12 +26,12 @@ body {
   font-size: 14px;
   color: #fff;
   caret-color: #fff;
-  letter-spacing: 1px;
+  letter-spacing: .5px;
 }
 .textarea::placeholder {
   color: rgb(172, 172, 172);
   font-size: 12px;
-  font-family: 'Ubuntu Mono', monospace;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
 }
 
 .textarea:focus {
@@ -39,8 +39,8 @@ body {
 }
 
 .buttonClick {
-  font-family: 'Ubuntu Mono', monospace;
-  margin: 10px 0 0 0;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  margin: 15px 0 0 0;
   background-color: rgb(255, 164, 180);
   border: none;
   font-size: 16px;
@@ -61,4 +61,9 @@ body {
   text-align: center;
   margin: 10px 0;
   color: #fff;
+}
+.pigg{
+  margin: 10px 0 0 0;
+  width: 70px;
+  height: 70px;
 }
