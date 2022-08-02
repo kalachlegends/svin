@@ -1,3 +1,46 @@
-#editdialog input {
-  width: 100%
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+
+body {
+  width: 300px;
+  resize: vertical;
+  overflow-y: hidden;
+}
+
+.con {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.textarea {
+  font-family: 'Ubuntu Mono', monospace;
+  min-height: 80px;
+  resize: vertical;
+  border: 1px solid pink;
+  outline: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 14px;
+  color: #000;
+}
+
+.textarea:focus {
+  border: 1px solid rgb(253, 144, 162);
+}
+
+.buttonClick {
+  font-family: 'Ubuntu Mono', monospace;
+  margin: 10px 0 0 0;
+  background-color: pink;
+  border: none;
+  font-size: 16px;
+  padding: 7px 0px;
+  border-radius: 50px;
+  transition: all .3s ease 0s;
+  cursor: pointer;
+}
+
+.buttonClick:focus {
+  background-color: rgb(253, 144, 162);
+  border: none;
 }
