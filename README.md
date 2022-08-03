@@ -13,8 +13,8 @@
 Готово! Вы получили необходимый вам текст на поросячьей латыни
 ___
 #### Разработчики:
-![artem](https://img.shields.io/github/followers/kalachlegends?color=red&label=kalachlegends&style=social) 
-![sasha](https://img.shields.io/github/followers/chudickgumanoid?label=chudickgumanoid&style=social)
-___
+
+[Artem Kalachev](https://github.com/kalachlegends)
+[Alexandr Obrazkov](https://github.com/chudickgumanoid)
 
 <!-- Благодарность принимаем переводом на карту Halyk Bank 4405 6398 1440 1566 -->

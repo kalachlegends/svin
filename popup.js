@@ -5,9 +5,11 @@ $('#ok').click(function () {
   copyTextClipBoard(val);
   element.innerHTML = "Вы стали хрюшкой <div><img class='pigg' src='icon-setdown.png'/></div>";
   setTimeout(function () {
+    console.log(document.body.height, document.body)
+    document.documentElement.style.height = "170px"
     element.innerHTML = ""
     $('#launguagePig').val("")
-  }, 2000)
+  }, 5000)
 })
 
 function pigTransleter(string) {
@@ -53,6 +55,12 @@ enterText.onkeydown = function (e) {
     let val = pigTransleter($('#launguagePig').val());
     copyTextClipBoard(val);
     element.innerHTML = "Вы стали хрюшкой <div><img class='pigg' src='icon-setdown.png'/></div>";
+    setTimeout(function () {
+      console.log(document.body.height, document.body)
+      document.documentElement.style.height = "170px"
+      element.innerHTML = ""
+      $('#launguagePig').val("")
+    }, 5000)
   }
   return true;
 }
