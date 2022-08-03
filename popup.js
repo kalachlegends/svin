@@ -4,6 +4,10 @@ $('#ok').click(function () {
   let val = pigTransleter($('#launguagePig').val());
   copyTextClipBoard(val);
   element.innerHTML = "Вы стали хрюшкой <div><img class='pigg' src='icon-setdown.png'/></div>";
+  setTimeout(function () {
+    element.innerHTML = ""
+    $('#launguagePig').val("")
+  }, 2000)
 })
 
 function pigTransleter(string) {
@@ -52,9 +56,3 @@ enterText.onkeydown = function (e) {
   }
   return true;
 }
-
-// let sran = document.querySelector("#launguagePig");
-// function drisnya (sran) {
-//   sran.replace(' ').setInterval(sran, 3000);
-// }
-// drisnya();
