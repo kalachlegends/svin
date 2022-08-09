@@ -15,7 +15,8 @@ $('#ok').click(function () {
 function pigTransleter(string) {
   let vowels = ['а', 'и', 'е', 'ё', 'о', 'у', 'ы', 'э', 'ю', 'я']
   let uppers = ['А', 'И', 'Е', 'Ё', 'О', 'У', 'Ы', 'Э', 'Ю', 'Я']
-  function pigTransle(string, vowels, uppers) {
+  let wordEn = ['b', 'c', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'm', 'n', 'p', 'q', 'r', 's', 't', 'v', 'w', 'x', 'z', 'B', 'C', 'D', 'F', 'G', 'H', 'J', 'K', 'L', 'M', 'N', 'P', 'Q', 'R', 'S', 'T', 'V', 'W', 'X', 'Z']
+  function pigTransle(string, vowels, uppers, wordEn) {
 
     const myArray = string.split("");
 
@@ -41,8 +42,9 @@ function pigTransleter(string) {
     });
 
   }
-  return pigTransle(string, vowels, uppers)
+  return pigTransle(string, vowels, uppers, wordEn)
 }
+
 
 function copyTextClipBoard(text) {
   navigator.clipboard.writeText(text);
